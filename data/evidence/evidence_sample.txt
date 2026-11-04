@@ -1,0 +1,6 @@
+CaseProof Evidence Sample
+Case ID: CASE-001
+Evidence Type: Security Login Records
+Username: admin
+Event: failed_login
+Source IP: 192.0.2.10

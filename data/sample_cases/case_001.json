@@ -1,0 +1,59 @@
+
+{
+  "case_id": "CASE-001",
+  "case_title": "Suspicious Login Investigation",
+  "evidence": [
+    {
+      "evidence_id": "EV-001",
+      "event_type": "failed_login",
+      "username": "admin",
+      "source_ip": "192.0.2.10"
+    },
+    {
+      "evidence_id": "EV-002",
+      "event_type": "failed_login",
+      "username": "admin",
+      "source_ip": "192.0.2.10"
+    },
+    {
+      "evidence_id": "EV-003",
+      "event_type": "failed_login",
+      "username": "admin",
+      "source_ip": "192.0.2.10"
+    },
+    {
+      "evidence_id": "EV-004",
+      "event_type": "success_login",
+      "username": "admin",
+      "source_ip": "192.0.2.10"
+    }
+  ],
+  
+"claims": [
+  {
+    "claim_id": "CL-001",
+    "claim_type": "failed_login_count",
+    "statement": "Admin experienced three failed login attempts.",
+    "username": "admin",
+    "expected_count": 3,
+    "evidence_ids": ["EV-001", "EV-002", "EV-003"]
+  },
+  {
+    "claim_id": "CL-002",
+    "claim_type": "data_exfiltration",
+    "statement": "The attacker stole company data.",
+    "username": "admin",
+    "expected_count": null,
+    "evidence_ids": ["EV-004"]
+  },
+  {
+    "claim_id": "CL-003",
+    "claim_type": "failed_login_count",
+    "statement": "Admin experienced five failed login attempts.",
+    "username": "admin",
+    "expected_count": 5,
+    "evidence_ids": ["EV-001", "EV-002", "EV-003"]
+  }
+]
+
+}
