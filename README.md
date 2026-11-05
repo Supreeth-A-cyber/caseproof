@@ -29,6 +29,12 @@ Shows evidence gap analysis, investigation report generation, SHA-256 evidence v
 
 ![CaseProof Evidence and Audit Integrity](screenshots/02-evidence-integrity.png)
 
+## System Architecture
+
+The following diagram illustrates CaseProof's main components and how investigation data flows through the application.
+
+![CaseProof System Architecture](docs/caseproof-architecture.png)
+
 ## Technology Stack
 
 - Python
