@@ -15,6 +15,20 @@ CaseProof is a Python-based cybersecurity project designed to evaluate the quali
 - **Investigation Reports:** Generates structured Markdown reports.
 - **Application Logging:** Records application events and errors.
 
+## Application Screenshots
+
+### 1. Main Application Execution
+
+Shows CaseProof loading an investigation case, validating evidence, and evaluating investigation claims.
+
+![CaseProof Main Execution](screenshots/01-main-execution.png)
+
+### 2. Evidence and Audit Integrity Verification
+
+Shows evidence gap analysis, investigation report generation, SHA-256 evidence verification, and audit trail integrity verification.
+
+![CaseProof Evidence and Audit Integrity](screenshots/02-evidence-integrity.png)
+
 ## Technology Stack
 
 - Python
